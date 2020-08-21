@@ -1,0 +1,311 @@
+/* ------
+ *   PC
+ * ------
+*/
+
+/*移动端模块*/
+.d-side-bar__layer,
+.d-side-bar__web-btn,
+.d-side-bar__btn-wrap--open {
+    display: none;
+}
+
+.d-side-bar__wrap {
+    display: block;
+    width: 343px;
+    /*height: 420px;*/
+    position: fixed;
+    right: -10px;
+    top: 50%;
+    margin-top: -300px;
+    transform: translateX(300px);
+    transition: transform .8s;
+    filter: drop-shadow(0 10px 20px rgba(52, 136, 244, 0.1));
+}
+
+.is-pc-wrap:hover {
+    transform: translateX(0)
+}
+
+.d-side-bar__tag {
+    display: block;
+    width: 43px;
+    height: 143px;
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    background: url(../assets/img/invalid-name.png) no-repeat;
+    background-size: contain;
+}
+
+.d-side-bar__body {
+    width: 300px;
+    min-height: 420px;
+    position: relative;
+    padding: 30px;
+    margin-left: 43px;
+    box-sizing: border-box;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.d-side-bar__body-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 200px;
+    background: linear-gradient(317deg, rgba(56, 181, 244, 1) 0%, rgba(2, 55, 248, 1) 100%);
+}
+
+.d-side-bar__body-bg-layout {
+    position: absolute;
+    top: 152px;
+    left: 0;
+    right: 0;
+    border-top: 48px solid transparent;
+    border-right: 320px solid white;
+}
+
+.d-side-bar__body-bg::after {
+    position: absolute;
+    content: '';
+    right: -12%;
+    top: -25%;
+    width: 150px;
+    height: 140px;
+    background: linear-gradient(113deg, rgba(50, 168, 244, 0.43) 0%, rgba(48, 162, 245, 0) 100%);
+    border-radius: 50%;
+}
+
+.d-side-bar__qr-code-wrap {
+    height: 220px;
+    padding: 30px 40px;
+    box-shadow: 0 15px 20px 0 rgba(52, 136, 244, 0.12);
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(0);
+}
+
+.d-side-bar__qr-code {
+    width: 100%;
+    height: 160px;
+    background-color: #f7f7f7;
+}
+
+.d-side-bar__progress-wrap {
+    margin-top: 20px;
+    /*height: 114px;*/
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 15px 20px 0 rgba(52, 136, 244, 0.12);
+    border-radius: 10px;
+    padding: 0 25px;
+}
+
+.d-side-bar__p {
+    font-weight: 600;
+    color: rgba(137, 135, 156, 1);
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.d-side-bar__p--f {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(216, 216, 216, 1);
+
+}
+
+.d-side-bar__p--l {
+    padding-top: 4px;
+    padding-bottom: 9px;
+}
+
+.d-side-bar__p--title {
+    color: #3a3d43;
+    font-size: 14px;
+}
+
+.d-side-bar__p--desc {
+    padding-top: 11px;
+    font-weight: 400;
+    color: #66647d;
+}
+
+.d-side-bar__p--desc a {
+    color: #ff9363;
+}
+
+.d-side-bar__p--desc a:hover {
+    color: #6358b2;
+}
+
+.d-side-bar__progress-container {
+    height: 18px;
+    border-radius: 9px;
+    -webkit-filter: blur(1.9px);
+    filter: blur(1.9px);
+    background-image: linear-gradient(to top, #d2d1d1, #ffffff);
+    position: relative;
+}
+
+.d-side-bar__progress-shadow {
+    height: 10px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #d2d1d1, #ffffff);
+    position: relative;
+    left: 2%;
+    top: -13px;
+    width: 96%;
+}
+
+.d-side-bar__progress-bar {
+    height: 6px;
+    border-radius: 4px;
+    background-image: linear-gradient(94deg, #6833f9, #4ad9ff);
+    box-shadow: inset 0 -1px 3px 0 #ababab40;
+    position: relative;
+    left: 3%;
+    top: -20px;
+    max-width: 178px;
+    /* 100% 的宽度 */
+    transition: width .8s;
+}
+
+.d-side-bar__lb-container {
+    margin-left: 2.5px;
+    width: 185px;
+    height: 18px;
+    background-image: url(../assets/img/bar.png);
+    position: relative;
+}
+
+/* ------
+ *   Web
+ * ------
+*/
+@media screen and (max-width: 768px) {
+    .d-side-bar__layer {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .d-side-bar__body {
+        margin-left: 0;
+        border-radius: 15px;
+        height: 450px;
+        overflow-y: auto;
+    }
+
+    .d-side-bar__tag {
+        display: none;
+    }
+
+    .d-side-bar__wrap {
+        visibility: hidden;
+        width: 300px;
+        right: 50%;
+        transform: translateX(50%) translateY(300%)
+    }
+
+    .d-side-bar__btn-wrap {
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        top: -60px;
+        right: 15px;
+    }
+
+    .d-side-bar__btn-wrap--open {
+        width: 50px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.52);
+        position: fixed;
+        border-radius: 50%;
+        bottom: 5%;
+        right: 10%;
+        display: block;
+    }
+
+    .d-side-bar__btn--open {
+        display: block;
+        background-color: white;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .d-side-bar__btn--open::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url('../assets/img/heart.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .d-side-bar__btn--close {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: -67px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.52);
+    }
+
+    .d-side-bar__btn--close::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 50%;
+        background-image: url('../assets/img/close.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .d-side-bar__body-bg {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .isHide {
+        display: none;
+    }
+
+    .wrap-show {
+        visibility: visible;
+    }
+
+    .wrap-translateY {
+        transform: translateX(50%) translateY(0)
+    }
+
+    .isShow {
+        visibility: visible;
+        transform: translateX(50%) translateY(0)
+    }
+}
