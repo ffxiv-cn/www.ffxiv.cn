@@ -72,7 +72,7 @@
         '</div>',
         '<div class="d-side-bar__progress-wrap">',
         '<div class="d-side-bar__p d-side-bar__p--title">广告来自谷歌推荐</div>',
-        '<div class="d-side-bar__p d-side-bar__p--desc"><a href="https://www.ffxiv.cn/detail/article/534" target="_blank">广告屏蔽指南与说明</a></div>',
+        '<div class="d-side-bar__p d-side-bar__p--desc"><a href="http://www.ffxiv.cn/detail/article/534" target="_blank">广告屏蔽指南与说明</a></div>',
         // '<div class="d-side-bar__p d-side-bar__p--desc"></div>',
         // '<div class="d-side-bar__p d-side-bar__p--f">进度</div>',
         // '<div class="d-side-bar__p d-side-bar__p--l">需求：￥' + this.total.toFixed(2) + '</div>',
